@@ -6,11 +6,60 @@
 	<title></title>
 </head>
 <body>
-	<h1>Link elements &lt;a&gt;</h1>
+	<h1>Hyperlink elements &lt;a&gt;</h1>
+	<h2>Hyperlink tag</h2>
 	<table>
 		<thead>
-			<td></td>
+			<th>name</th>
+			<th>tag</th>
+			<th>description</th>
 		</thead>
+		<tbody>
+			<tr>
+				<td>Hyperlink</td>
+				<td>&lt;a&gt; &lt;/a&gt;</td>
+				<td>Hyperlinks to another page</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Hyperlink attributes</h2>
+	<table>
+		<thead>
+			<th>attribute</th>
+			<th>value</th>
+			<th>description</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>href</td>
+				<td>URL</td>
+				<td>Specifies the url where the hyperlink links to, can also be relative path (href="./relative/path.html")</td>
+			</tr>
+			<tr>
+				<td>download</td>
+				<td>filename</td>
+			<td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+			</tr>
+			<tr>
+				<td>ping</td>
+				<td>list_of_URLs</td>
+				<td>Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.</td>
+			</tr>
+			<tr>
+				<td rowspan="4">target</td>
+				<td>_blank</td>
+				<td rowspan="4">Specifies where to open the linked document</td>
+			</tr>
+			<tr>
+				<td>_parent</td>
+			</tr>
+			<tr>
+				<td>_self</td>
+			</tr>
+			<tr>
+				<td>_top</td>
+			</tr>
+		</tbody>
 	</table>
 </body>
 </html>
