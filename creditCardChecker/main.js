@@ -25,10 +25,26 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
+function validateCred(arr)
+{
+	let sum = 0;
+	let even;
 
+	if (arr.length % 2)
+		even = false;
+	else
+		even = true;
+	sum += arr[arr.length - 1];
+	for (let i = arr.length - 2; i > 0; i--)
+	{
+		console.log("num: " + arr[i]);
+		if (arr[i] * 2 > 9)
+			sum += arr[i] * 2 - 9;
+		else
+			sum += arr[i] * 2;
+		console.log("sum: " + sum);
+	}
+	console.log("total: " + sum);
+}
 
-
-
-
-
-
+validateCred(valid1);
